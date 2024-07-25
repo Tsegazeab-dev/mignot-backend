@@ -1,4 +1,3 @@
-
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -31,8 +30,6 @@ app.post("/payment/create", async (req, res) => {
   }
 });
 app.listen(5000, (err) => {
-    if (err) throw err
-    console.log("Amazon server running on PORT:http://localhost:5000")
-})
-
-
+  if (err) throw err;
+  console.log("Amazon server running on PORT:http://localhost:5000");
+});
